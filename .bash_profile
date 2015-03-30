@@ -1,22 +1,34 @@
-# My dotfiles. Kept in ~/.dotfiles
+###############################################################################
+#
+#  Suggested Bash Profile settings for Mac OSX Terminal  
+#  ----------------------------------------------------
+#
+#  Clone the dotfiles project from GitHub into your users home directory with:
+#
+#	git clone https://github.com/robmccardle/dotfiles.git ~/.dotfiles
+#
+#  Create a symbolic link with:
+#
+#	ln -s ~/.dotfiles/.bash_profile ~/.bash_profile 
+#
+#  Remember to either restart Terminal/iTerm or `source` these settings with:
+#
+#	source ~/.bash_profile
+#
+################################################################################
 
 # User specific environment and startup programs - Enables MySQL Shell on Local
 export PATH="$HOME/bin:$PATH"
 
-# Use Sublime Text 2 recommendation - https://gist.github.com/1236170
+# Needed for Sublime & Homebrew (amongst others)
 export PATH="/usr/local/bin:$PATH"
-
-# Recommended by homebrew
 export PATH="/usr/local/sbin:$PATH"
-
-# Required by pear
-export PATH="$HOME/pear/bin:$PATH"
 
 # Terminal Colours
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacadx
 
-# Handy "extract" for any type of archive
+# Handy "extract" for most types of archive
 function extract()      
 {
      if [ -f $1 ] ; then
@@ -39,7 +51,7 @@ function extract()
      fi
 }
 
-# Show GIT branch in Terminal
+# Show GIT branch in Terminal header
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
@@ -50,3 +62,6 @@ source ~/.dotfiles/.aliases
 
 # Needed for RBENV
 eval "$(rbenv init -)"
+
+# Needed for Boxen
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
