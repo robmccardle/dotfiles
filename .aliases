@@ -2,6 +2,6 @@ alias cd.='cd .'
 alias cd..='cd ..'
 alias cd...='cd ...'
 
-alias l='ls -laF'
+#alias l='ls -laF'
 alias ll='ls -laF'
 alias gs='git status'
