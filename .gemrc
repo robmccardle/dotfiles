@@ -1,4 +1,0 @@
-# Globally disable download of additional documentation with Gems
-install: --no-rdoc --no-ri
-update: --no-rdoc --no-ri
-

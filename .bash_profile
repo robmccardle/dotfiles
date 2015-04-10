@@ -60,8 +60,6 @@ PS1="\[\e[01;31m\]\w \$(parse_git_branch): \[\e[00m\]"
 #Separate aliases out into a separate file
 source ~/.dotfiles/.aliases
 
-# Needed for RBENV
-eval "$(rbenv init -)"
 
-# Needed for Boxen
+# Needed for Boxen (Sorts out nodenv and rbenv initialisation for you)
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
