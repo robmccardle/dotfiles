@@ -63,3 +63,21 @@ source ~/.dotfiles/.aliases
 
 # Needed for Boxen (Sorts out nodenv and rbenv initialisation for you)
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+
+
+
+#Needed for Python3
+#PATH="/opt/boxen/homebrew/Cellar/python3/3.5.0/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+
+#PATH="/opt/boxen/homebrew/lib/python3.5/site-packages:${PATH}"
+
+export PATH
+
+
+
+# The next line updates PATH for the Google Cloud SDK.
+#source '~/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+#source '~/google-cloud-sdk/completion.bash.inc'
