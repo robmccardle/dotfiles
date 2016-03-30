@@ -61,23 +61,16 @@ PS1="\[\e[01;31m\]\w \$(parse_git_branch): \[\e[00m\]"
 source ~/.dotfiles/.aliases
 
 
-# Needed for Boxen (Sorts out nodenv and rbenv initialisation for you)
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+# phpenv
+export PATH=$HOME/.rbenv/bin:$PATH
+export PATH=$HOME/.nodenv/bin:$PATH
+export PATH=$HOME/.phpenv/bin:$PATH
+eval "$(rbenv init -)"
+eval "$(nodenv init -)"
+eval "$(phpenv init -)"
 
-
-
-
-#Needed for Python3
-#PATH="/opt/boxen/homebrew/Cellar/python3/3.5.0/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-
-#PATH="/opt/boxen/homebrew/lib/python3.5/site-packages:${PATH}"
-
-export PATH
-
-
-
-# The next line updates PATH for the Google Cloud SDK.
-#source '~/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-#source '~/google-cloud-sdk/completion.bash.inc'
+# Google Cloud SDK
+# Updates PATH
+source '~/google-cloud-sdk/path.bash.inc'
+# Enables shell command completion
+source '~/google-cloud-sdk/completion.bash.inc'

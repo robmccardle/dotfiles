@@ -5,6 +5,3 @@ alias cd...='cd ...'
 alias l='ls -laF'
 alias ll='ls -laF'
 alias gs='git status'
-
-#alias python=python3
-#alias pip=pip3
