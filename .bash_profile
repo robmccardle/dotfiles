@@ -1,21 +1,22 @@
-###############################################################################
+#####################################################################################
 #
-#  Suggested Bash Profile settings for Mac OSX Terminal  
-#  ----------------------------------------------------
+#  Suggested Bash Profile settings for Mac OSX Terminal/iTerm  
+#  ----------------------------------------------------------
 #
-#  Clone the dotfiles project from GitHub into your users home directory with:
+#  To use, clone this repo from GitHub into your users home directory with:
 #
-#	git clone https://github.com/robmccardle/dotfiles.git ~/.dotfiles
+#     git clone https://github.com/robmccardle/dotfiles.git ~/.dotfiles
 #
-#  Create a symbolic link with:
+#  Create a symbolic link to the bash profile from it's usual location with:
 #
-#	ln -s ~/.dotfiles/.bash_profile ~/.bash_profile 
+#     ln -s ~/.dotfiles/.bash_profile ~/.bash_profile 
 #
-#  Remember to either restart Terminal/iTerm or `source` these settings with:
+#  Remember to either restart Terminal/iTerm or `source` to flush hese settings via:
 #
-#	source ~/.bash_profile
+#    source ~/.bash_profile
 #
-################################################################################
+#
+#####################################################################################
 
 # User specific environment and startup programs - Enables MySQL Shell on Local
 export PATH="$HOME/bin:$PATH"
@@ -61,7 +62,7 @@ PS1="\[\e[01;31m\]\w \$(parse_git_branch): \[\e[00m\]"
 source ~/.dotfiles/.aliases
 
 
-# phpenv
+# Ruby, Node & PHP Environments
 export PATH=$HOME/.rbenv/bin:$PATH
 export PATH=$HOME/.nodenv/bin:$PATH
 export PATH=$HOME/.phpenv/bin:$PATH
