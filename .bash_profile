@@ -75,3 +75,6 @@ eval "$(phpenv init -)"
 source '~/google-cloud-sdk/path.bash.inc'
 # Enables shell command completion
 source '~/google-cloud-sdk/completion.bash.inc'
+
+#JTR
+export PATH="$HOME/tools/john/john-1.8.0-jumbo-1/run:$PATH"
