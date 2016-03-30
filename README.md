@@ -12,6 +12,10 @@ Create a symbolic link to the bash profile from it's usual location with:
 
      ln -s ~/.dotfiles/.bash_profile ~/.bash_profile 
 
-Remember to either restart Terminal/iTerm or `source` to flush hese settings via:
+Create a symbolic link to the global gitignore from it's usual location with:
+
+     ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global 
+
+Remember to either restart Terminal/iTerm or `source` to flush your settings via:
 
     source ~/.bash_profile
