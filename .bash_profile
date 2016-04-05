@@ -61,15 +61,6 @@ PS1="\[\e[01;31m\]\w \$(parse_git_branch): \[\e[00m\]"
 #Separate aliases out into a separate file
 source ~/.dotfiles/.aliases
 
-
-# Ruby, Node & PHP Environments
-export PATH=$HOME/.rbenv/bin:$PATH
-export PATH=$HOME/.nodenv/bin:$PATH
-export PATH=$HOME/.phpenv/bin:$PATH
-eval "$(rbenv init -)"
-eval "$(nodenv init -)"
-eval "$(phpenv init -)"
-
 # Google Cloud SDK
 # Updates PATH
 source '~/google-cloud-sdk/path.bash.inc'
@@ -78,3 +69,12 @@ source '~/google-cloud-sdk/completion.bash.inc'
 
 #JTR
 export PATH="$HOME/tools/john/john-1.8.0-jumbo-1/run:$PATH"
+
+
+# Ruby, Node & PHP Environments (has to be last in profile)
+export PATH=$HOME/.phpenv/bin:$PATH
+export PATH=$HOME/.nodenv/bin:$PATH
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(phpenv init -)"
+eval "$(nodenv init -)"
+eval "$(rbenv init -)"
