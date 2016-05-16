@@ -63,18 +63,29 @@ source ~/.dotfiles/.aliases
 
 # Google Cloud SDK
 # Updates PATH
-source '~/google-cloud-sdk/path.bash.inc'
+#source '~/google-cloud-sdk/path.bash.inc'
 # Enables shell command completion
-source '~/google-cloud-sdk/completion.bash.inc'
+#source '~/google-cloud-sdk/completion.bash.inc'
 
-#JTR
+#John The Ripper
 export PATH="$HOME/tools/john/john-1.8.0-jumbo-1/run:$PATH"
 
+#Android SDK
+export PATH="$HOME/Library/Android/tools:$PATH"
+export PATH="$HOME/Library/Android/platform-tools:$PATH"
 
-# Ruby, Node & PHP Environments (has to be last in profile)
-export PATH=$HOME/.phpenv/bin:$PATH
-export PATH=$HOME/.nodenv/bin:$PATH
+# Ruby & Node Environments 
 export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(phpenv init -)"
-eval "$(nodenv init -)"
+export PATH=$HOME/.nodenv/bin:$PATH
+
+# Java stuff
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Apache Maven
+export M2_HOME=~/tools/apache-maven-3.3.9
+export PATH=$PATH:$M2_HOME/bin
+
+# These have to be last in profile - don't edit PATH after them
 eval "$(rbenv init -)"
+eval "$(nodenv init -)"
+
