@@ -58,6 +58,9 @@ parse_git_branch() {
 }
 PS1="\[\e[01;31m\]\w \$(parse_git_branch): \[\e[00m\]"
 
+# Add key to SSH agent 
+ssh-add -k ~/.ssh/id_rsa
+
 #Separate aliases out into a separate file
 source ~/.dotfiles/.aliases
 
