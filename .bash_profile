@@ -64,6 +64,10 @@ ssh-add -k ~/.ssh/id_rsa
 #Separate aliases out into a separate file
 source ~/.dotfiles/.aliases
 
+# Use Python 3 (Leaving the Mac defaault Python 2.7 installed in parallel)
+#alias python='python3'
+#alias pip='pip3'
+
 # Google Cloud SDK
 # Updates PATH
 #source '~/google-cloud-sdk/path.bash.inc'
