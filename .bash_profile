@@ -92,6 +92,9 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export M2_HOME=~/tools/apache-maven-3.3.9
 export PATH=$PATH:$M2_HOME/bin
 
+#Ansible Vault
+ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
+
 # These have to be last in profile - don't edit PATH after them
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
