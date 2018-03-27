@@ -75,27 +75,27 @@ source ~/.dotfiles/.aliases
 #source '~/google-cloud-sdk/completion.bash.inc'
 
 #John The Ripper
-export PATH="$HOME/tools/john/john-1.8.0-jumbo-1/run:$PATH"
+#export PATH="$HOME/tools/john/john-1.8.0-jumbo-1/run:$PATH"
 
 #Android SDK
-export PATH="$HOME/Library/Android/tools:$PATH"
-export PATH="$HOME/Library/Android/platform-tools:$PATH"
+#export PATH="$HOME/Library/Android/tools:$PATH"
+#export PATH="$HOME/Library/Android/platform-tools:$PATH"
 
 # Ruby & Node Environments 
-export PATH=$HOME/.rbenv/bin:$PATH
-export PATH=$HOME/.nodenv/bin:$PATH
+#export PATH=$HOME/.rbenv/bin:$PATH
+#export PATH=$HOME/.nodenv/bin:$PATH
 
 # Java stuff
-export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Apache Maven
-export M2_HOME=~/tools/apache-maven-3.3.9
-export PATH=$PATH:$M2_HOME/bin
+#export M2_HOME=~/tools/apache-maven-3.3.9
+#export PATH=$PATH:$M2_HOME/bin
 
 #Ansible Vault
-ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
+#ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 
 # These have to be last in profile - don't edit PATH after them
-eval "$(rbenv init -)"
-eval "$(nodenv init -)"
+#eval "$(rbenv init -)"
+#eval "$(nodenv init -)"
 
